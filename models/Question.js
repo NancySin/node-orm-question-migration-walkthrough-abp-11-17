@@ -9,7 +9,7 @@ class Question{
    return new Promise (function(resolve){
 
      const sql = `CREATE TABLE questions
-     id INTEGER PRIMARY KEY
+     (id INTEGER PRIMARY KEY,
      content TEXT)`
 
    db.run (sql, function(){
@@ -21,3 +21,4 @@ class Question{
 }
 
 module.exports = Question;
+
